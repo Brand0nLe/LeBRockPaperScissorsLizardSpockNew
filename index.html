@@ -1,0 +1,139 @@
+<!-- Brandon Le
+1-20-23
+Rock Paper Scissors Lizard Spock
+HTML, CSS, JS, to create a RPSLS game. The purpose is to have options to play against the computer or play against a player 2 human. There are 3 game modes for best of 1, 5, and 7. -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+
+    <!-- NavBar Start -->
+    <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand navText">Brandon's RPSLS</a>
+          <div class="d-flex justify-content-end">
+              <a class="nav-link" href="./index.html">Home</a>
+          </div>
+        </div>
+      </nav>
+      <!-- NavBar End -->
+<br><br>
+
+
+    <div class="row">
+        <h1 class = "rpslsTitle">Rock Paper Scissors Lizard Spock</h1>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div id="injectHere" class="col-12 text-center">
+            <h2>Choose Your Opponent</h2>
+        </div>
+        <div id="injectHere3" class="col-12 text-center">
+            <h3></h3>
+        </div>
+    </div>
+    <br>
+
+    <!-- Row containing buttons to choose computer or player 2 -->
+    <div class="container-fluid d-flex justify-content-center">
+        <div id="injectHere2" class="row">
+            <div class="col-12">
+                <button id="playComputerBtn" type="button" class="btn selectPlayer">Play With Computer</button>
+
+                <button id="playHumanBtn" type="button" class="btn selectPlayer">Play With Human</button>
+            </div>
+        </div>
+
+        <div id="injectHere4" class="row">
+            <div class="col-12">
+
+            </div>
+        </div>
+    </div>
+
+
+<br><br>
+    <div class="row">
+        <div class="col-12 text-center">
+            <h1 class="gameText" id="playerText">Player: </h1>
+            <h1 class="gameText" id="computerText">Computer: </h1>
+            <h1 class="gameText" id="resultText">Result: </h1>
+        </div>
+    </div>
+    <!-- End Row containing buttons to choose computer or player 2 -->
+
+
+
+
+    <!-- Row containing game modes -->
+    <!-- <div class="container-fluid d-flex justify-content-center d-none">
+        <div class="row">
+            <div class="col-12">
+                <button id="gameMode1" type="button" class="btn btnSize">Best of 1</button>
+
+
+                <button id="gameMode2" type="button" class="btn btnSize">Best of 5</button>
+
+
+                <button id="gameMode3" type="button" class="btn btnSize">Best of 7</button>
+            </div>
+        </div>
+    </div> -->
+    <!-- End Row containing game modes -->
+
+
+
+    <!-- Row containing options for Rock Paper Scissors Lizard Spock -->
+    <!-- <div class="row d-none">
+        <h1>Make Your Choice:</h1>
+    </div>
+
+
+    <div class="container-fluid d-flex justify-content-center d-none">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-2">
+                <button id="rockBtn" type="button" class="btn btnSize">Rock</button>
+            </div>
+            <div class="col-2">
+                <button id="paperBtn" type="button" class="btn btnSize">Paper</button>
+            </div>
+            <div class="col-2">
+                <button id="scissorsBtn" type="button" class="btn btnSize">Scissors</button>
+            </div>
+            <div class="col-2">
+                <button id="lizardBtn" type="button" class="btn btnSize">Lizard</button>
+            </div>
+            <div class="col-2">
+                <button id="spockBtn" type="button" class="btn btnSize">Spock</button>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div> -->
+    <!-- End Row containing options for Rock Paper Scissors Lizard Spock -->
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="./scripts/app.js"></script>
+</body>
+
+</html>
