@@ -18,10 +18,17 @@ let spockBtn;
 let player1Choice;
 let player2Choice;
 let computerChoice;
+
+let wins = 0;
+let losses = 0;
+let ties = 0;
+
 // let button = document.getElementsByClassName("rpslsBtn");
 
 const playerText = document.querySelector("#playerText");
+let playerScoreText = document.querySelector("#playerScoreText");
 const computerText = document.querySelector("#computerText");
+let computerScoreText = document.querySelector("#computerScoreText");
 const resultText = document.querySelector("#resultText");
 const choiceBtn = document.querySelectorAll(".choiceBtn");
 
@@ -70,35 +77,45 @@ playComputerBtn.addEventListener("click", function () {
             player1Choice = event.target.textContent;
             getData();
             playerText.textContent = ("Player: " + player1Choice);
+            playerScoreText.textContent = ("[Player Score] " + "Wins: " + wins + " Ties: " + ties);
             computerText.textContent = ("Computer: " + computerChoice);
+            computerScoreText.textContent = ("[Computer Score] " + "Wins: " + losses + " Ties: " + ties);
             resultText.textContent = ("Result: " + determineWinner(player1Choice, computerChoice));
         });
         paperBtn = document.getElementById("paperBtn").addEventListener("click", event => {
             player1Choice = event.target.textContent;
             getData();
             playerText.textContent = ("Player: " + player1Choice);
+            playerScoreText.textContent = ("[Player Score] " + "Wins: " + wins + " Ties: " + ties);
             computerText.textContent = ("Computer: " + computerChoice);
+            computerScoreText.textContent = ("[Computer Score] " + "Wins: " + losses + " Ties: " + ties);
             resultText.textContent = ("Result: " + determineWinner(player1Choice, computerChoice));
         });
         scissorsBtn = document.getElementById("scissorsBtn").addEventListener("click", event => {
             player1Choice = event.target.textContent;
             getData();
             playerText.textContent = ("Player: " + player1Choice);
+            playerScoreText.textContent = ("[Player Score] " + "Wins: " + wins + " Ties: " + ties);
             computerText.textContent = ("Computer: " + computerChoice);
+            computerScoreText.textContent = ("[Computer Score] " + "Wins: " + losses + " Ties: " + ties);
             resultText.textContent = ("Result: " + determineWinner(player1Choice, computerChoice));
         });
         lizardBtn = document.getElementById("lizardBtn").addEventListener("click", event => {
             player1Choice = event.target.textContent;
             getData();
             playerText.textContent = ("Player: " + player1Choice);
+            playerScoreText.textContent = ("[Player Score] " + "Wins: " + wins + " Ties: " + ties);
             computerText.textContent = ("Computer: " + computerChoice);
+            computerScoreText.textContent = ("[Computer Score] " + "Wins: " + losses + " Ties: " + ties);
             resultText.textContent = ("Result: " + determineWinner(player1Choice, computerChoice));
         });
         spockBtn = document.getElementById("spockBtn").addEventListener("click", event => {
             player1Choice = event.target.textContent;
             getData();
             playerText.textContent = ("Player: " + player1Choice);
+            playerScoreText.textContent = ("[Player Score] " + "Wins: " + wins + " Ties: " + ties);
             computerText.textContent = ("Computer: " + computerChoice);
+            computerScoreText.textContent = ("[Computer Score] " + "Wins: " + losses + " Ties: " + ties);
             resultText.textContent = ("Result: " + determineWinner(player1Choice, computerChoice));
         });
 
@@ -137,35 +154,45 @@ playComputerBtn.addEventListener("click", function () {
             player1Choice = event.target.textContent;
             getData();
             playerText.textContent = ("Player: " + player1Choice);
+            playerScoreText.textContent = ("[Player Score] " + "Wins: " + wins + " Ties: " + ties);
             computerText.textContent = ("Computer: " + computerChoice);
+            computerScoreText.textContent = ("[Computer Score] " + "Wins: " + losses + " Ties: " + ties);
             resultText.textContent = ("Result: " + determineWinner(player1Choice, computerChoice));
         });
         paperBtn = document.getElementById("paperBtn").addEventListener("click", event => {
             player1Choice = event.target.textContent;
             getData();
             playerText.textContent = ("Player: " + player1Choice);
+            playerScoreText.textContent = ("[Player Score] " + "Wins: " + wins + " Ties: " + ties);
             computerText.textContent = ("Computer: " + computerChoice);
+            computerScoreText.textContent = ("[Computer Score] " + "Wins: " + losses + " Ties: " + ties);
             resultText.textContent = ("Result: " + determineWinner(player1Choice, computerChoice));
         });
         scissorsBtn = document.getElementById("scissorsBtn").addEventListener("click", event => {
             player1Choice = event.target.textContent;
             getData();
             playerText.textContent = ("Player: " + player1Choice);
+            playerScoreText.textContent = ("[Player Score] " + "Wins: " + wins + " Ties: " + ties);
             computerText.textContent = ("Computer: " + computerChoice);
+            computerScoreText.textContent = ("[Computer Score] " + "Wins: " + losses + " Ties: " + ties);
             resultText.textContent = ("Result: " + determineWinner(player1Choice, computerChoice));
         });
         lizardBtn = document.getElementById("lizardBtn").addEventListener("click", event => {
             player1Choice = event.target.textContent;
             getData();
             playerText.textContent = ("Player: " + player1Choice);
+            playerScoreText.textContent = ("[Player Score] " + "Wins: " + wins + " Ties: " + ties);
             computerText.textContent = ("Computer: " + computerChoice);
+            computerScoreText.textContent = ("[Computer Score] " + "Wins: " + losses + " Ties: " + ties);
             resultText.textContent = ("Result: " + determineWinner(player1Choice, computerChoice));
         });
         spockBtn = document.getElementById("spockBtn").addEventListener("click", event => {
             player1Choice = event.target.textContent;
             getData();
             playerText.textContent = ("Player: " + player1Choice);
+            playerScoreText.textContent = ("[Player Score] " + "Wins: " + wins + " Ties: " + ties);
             computerText.textContent = ("Computer: " + computerChoice);
+            computerScoreText.textContent = ("[Computer Score] " + "Wins: " + losses + " Ties: " + ties);
             resultText.textContent = ("Result: " + determineWinner(player1Choice, computerChoice));
         });
     });
@@ -190,35 +217,45 @@ playComputerBtn.addEventListener("click", function () {
             player1Choice = event.target.textContent;
             getData();
             playerText.textContent = ("Player: " + player1Choice);
+            playerScoreText.textContent = ("[Player Score] " + "Wins: " + wins + " Ties: " + ties);
             computerText.textContent = ("Computer: " + computerChoice);
+            computerScoreText.textContent = ("[Computer Score] " + "Wins: " + losses + " Ties: " + ties);
             resultText.textContent = ("Result: " + determineWinner(player1Choice, computerChoice));
         });
         paperBtn = document.getElementById("paperBtn").addEventListener("click", event => {
             player1Choice = event.target.textContent;
             getData();
             playerText.textContent = ("Player: " + player1Choice);
+            playerScoreText.textContent = ("[Player Score] " + "Wins: " + wins + " Ties: " + ties);
             computerText.textContent = ("Computer: " + computerChoice);
+            computerScoreText.textContent = ("[Computer Score] " + "Wins: " + losses + " Ties: " + ties);
             resultText.textContent = ("Result: " + determineWinner(player1Choice, computerChoice));
         });
         scissorsBtn = document.getElementById("scissorsBtn").addEventListener("click", event => {
             player1Choice = event.target.textContent;
             getData();
             playerText.textContent = ("Player: " + player1Choice);
+            playerScoreText.textContent = ("[Player Score] " + "Wins: " + wins + " Ties: " + ties);
             computerText.textContent = ("Computer: " + computerChoice);
+            computerScoreText.textContent = ("[Computer Score] " + "Wins: " + losses + " Ties: " + ties);
             resultText.textContent = ("Result: " + determineWinner(player1Choice, computerChoice));
         });
         lizardBtn = document.getElementById("lizardBtn").addEventListener("click", event => {
             player1Choice = event.target.textContent;
             getData();
             playerText.textContent = ("Player: " + player1Choice);
+            playerScoreText.textContent = ("[Player Score] " + "Wins: " + wins + " Ties: " + ties);
             computerText.textContent = ("Computer: " + computerChoice);
+            computerScoreText.textContent = ("[Computer Score] " + "Wins: " + losses + " Ties: " + ties);
             resultText.textContent = ("Result: " + determineWinner(player1Choice, computerChoice));
         });
         spockBtn = document.getElementById("spockBtn").addEventListener("click", event => {
             player1Choice = event.target.textContent;
             getData();
             playerText.textContent = ("Player: " + player1Choice);
+            playerScoreText.textContent = ("[Player Score] " + "Wins: " + wins + " Ties: " + ties);
             computerText.textContent = ("Computer: " + computerChoice);
+            computerScoreText.textContent = ("[Computer Score] " + "Wins: " + losses + " Ties: " + ties);
             resultText.textContent = ("Result: " + determineWinner(player1Choice, computerChoice));
         });
     });
@@ -236,6 +273,7 @@ playComputerBtn.addEventListener("click", function () {
 // Function to compare player 1 choice vs computer choice and determine the winner
 function determineWinner(player1Choice, computerChoice) {
     if (player1Choice === computerChoice) {
+        ties++;
         return "Draw - It's a TIE!!"
     } else if (
         (player1Choice === "Rock") && (computerChoice === "Scissors") ||
@@ -249,8 +287,10 @@ function determineWinner(player1Choice, computerChoice) {
         (player1Choice === "Spock") && (computerChoice === "Rock") ||
         (player1Choice === "Spock") && (computerChoice === "Scissors")
     ) {
+        wins++;
         return ("You win!");
     } else {
+        losses++;
         return ("You lose!");
     }
 }
