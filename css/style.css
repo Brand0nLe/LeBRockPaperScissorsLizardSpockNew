@@ -1,0 +1,64 @@
+/* Font Section */
+@font-face {
+    font-family: AlegreyaRegular;
+    src: url(../fonts/Alegreya-Regular.ttf);
+}
+@font-face {
+    font-family: SourceSansProRegular;
+    src: url(../fonts/SourceSansPro-Regular.ttf);
+}
+@font-face {
+    font-family: AlegreyaBold;
+    src: url(../fonts/Alegreya-Bold.ttf);
+}
+/* Font Section */
+
+
+
+body {
+    background-color: darkcyan;
+}
+
+h1 {
+    text-align: center;
+    font-family: SourceSansProRegular;
+}
+.rpslsTitle{
+    font-family: AlegreyaBold;
+    font-size: 4rem;
+}
+
+.selectPlayer {
+    background-color: lightcoral;
+    width: 400px;
+    height: 90px;
+    border-color: black;
+    font-family: SourceSansProRegular;
+    font-size: 2rem;
+    border-color: black;
+}
+
+.gameMode1,
+.gameMode2,
+.gameMode3 {
+    background-color: lightcoral;
+}
+
+.btnSize {
+    background-color: lightcoral;
+    font-family: SourceSansProRegular;
+    font-size: 2rem;
+    border-color: black;
+}
+
+.navbar, .navText{
+    background-color: black;
+    color: lightcoral;
+    font-family: SourceSansProRegular;
+    font-size: 2rem;
+}
+
+.gameText{
+    font-size: 3rem;
+    font-family: SourceSansProRegular;
+}
